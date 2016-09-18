@@ -66,7 +66,7 @@ class Weather extends Component {
 	render() {
 		return (
 			<View style={styles.weatherContainer}>
-				<Text>Weather</Text>
+				<Text>Weather Test</Text>
 			</View>
 		);
 	}
