@@ -11,21 +11,15 @@ import {
   Text,
   View
 } from 'react-native';
+import Weather from './src/components/Weather';
+import Clock from './src/components/Clock';
 
 class SmartMirror extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <Weather />
+				<Clock />
       </View>
     );
   }
@@ -34,8 +28,8 @@ class SmartMirror extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+		flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
