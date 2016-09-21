@@ -11,12 +11,15 @@
 
 #import "RCTBundleURLProvider.h"
 #import "RCTRootView.h"
+// import header
+#import "ReactNativeConfig.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
+	NSDictionary *config = [ReactNativeConfig env];
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 

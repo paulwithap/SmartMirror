@@ -13,7 +13,7 @@ class Weather extends Component {
 		this.longitude = '-118.4704324';
 		this.state = {
 			temp: '',
-			currIcon: '',
+			currIcon: 'ios-sunny',
 			forecast: '',
 			moonPhase: ''
 		};
@@ -25,27 +25,27 @@ class Weather extends Component {
 	getWeatherIcon(icon) {
 		switch (icon) {
 			case 'clear-day':
-				return 'sunny';
+				return 'ios-sunny';
 			case 'clear-night':
-				return 'moon';
+				return 'ios-moon';
 			case 'rain':
-				return 'rainy';
+				return 'ios-rainy';
 			case 'snow':
-				return 'snow';
+				return 'ios-snow';
 			case 'sleet':
-				return 'rainy';
+				return 'ios-rainy';
 			case 'wind':
-				return 'fastforward'
+				return 'ios-fastforward'
 			case 'fog':
-				return 'cloudy';
+				return 'ios-cloudy';
 			case 'cloudy':
-				return 'cloudy';
+				return 'ios-cloudy';
 			case 'partly-cloudy-day':
-				return 'partly-sunny';
+				return 'ios-partly-sunny';
 			case 'partly-cloudy-night':
-				return 'cloudy-night';
+				return 'ios-cloudy-night';
 			default:
-				return 'sunny';
+				return 'ios-sunny';
 		}
 	}
 
@@ -95,8 +95,10 @@ class Weather extends Component {
 	render() {
 		return (
 			<View style={styles.weatherContainer}>
-				<Text style={styles.weatherTemp}>{this.state.temp}°</Text>
-				<Text style={styles.weatherIcon}><Icon name={this.state.currIcon} size={32} color="#fff"/></Text>
+				<View style={styles.weatherTopRow}>
+					<Text style={styles.weatherTemp}>{this.state.temp}°{'  '}</Text>
+					<Text style={styles.weatherIcon}><Icon name={this.state.currIcon} size={32} color="#fff"/></Text>
+				</View>
 				<Text style={styles.weatherForecast}>{this.state.forecast}</Text>
 				<Text style={styles.weatherMoonPhase}>{this.state.moonPhase}</Text>
 			</View>
