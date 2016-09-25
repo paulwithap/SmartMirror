@@ -13,13 +13,17 @@ import {
 } from 'react-native';
 import Weather from './src/components/Weather';
 import Clock from './src/components/Clock';
+import CalendarEvents from './src/components/CalendarEvents';
 
 class SmartMirror extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Weather />
-				<Clock />
+				<View style={styles.weatherClock}>
+					<Weather />
+					<Clock />
+				</View>
+				<CalendarEvents />
       </View>
     );
   }
@@ -28,10 +32,15 @@ class SmartMirror extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-		flexDirection: 'row',
+		flexDirection: 'column',
     justifyContent: 'center',
     backgroundColor: '#000000',
   },
+	weatherClock: {
+		flex: 1,
+		flexDirection: 'row',
+		justifyContent: 'center',
+	},
   welcome: {
     fontSize: 20,
     textAlign: 'center',

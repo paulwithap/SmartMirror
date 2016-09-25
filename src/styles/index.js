@@ -9,28 +9,30 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	weatherTemp: {
-		paddingBottom: 12,
-		fontSize: 36,
+		fontSize: 40,
+		fontWeight: "200",
 		color: '#fff',
 	},
 	weatherIcon: {
 		paddingTop: 6,
-		paddingBottom: 12
 	},
 	weatherForecast: {
 		paddingBottom: 10,
+		fontSize: 20,
+		fontWeight: "200",
 		color: '#fff',
 	},
 	weatherMoonPhase: {
 		color: '#fff',
+		fontWeight: "200"
 	},
 	clockContainer: {
 		flex: 1,
 		padding: 20,
 	},
 	time: {
-		paddingBottom: 6,
-		fontSize: 36,
+		fontSize: 40,
+		fontWeight: "200",
 		textAlign: 'right',
 		color: '#fff'
 	},
@@ -40,14 +42,30 @@ const styles = StyleSheet.create({
 		color: '#fff'
 	},
 	day: {
-		fontSize: 14,
+		paddingBottom: 2,
+		fontSize: 20,
+		fontWeight: "200",
 		textAlign: 'right',
 		color: '#fff'
 	},
 	date: {
-		fontSize: 14,
+		fontSize: 20,
+		fontWeight: "200",
 		textAlign: 'right',
 		color: '#fff'
+	},
+	calendarEvents: {
+		flex: 1,
+		padding: 20
+	},
+	calendarEventsList: {
+
+	},
+	calendarEventListItem: {
+		padding: 6,
+		color: '#fff',
+		fontSize: 20,
+		fontWeight: "200"
 	}
 });
 
