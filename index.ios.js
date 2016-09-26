@@ -14,6 +14,7 @@ import {
 import Weather from './src/components/Weather';
 import Clock from './src/components/Clock';
 import CalendarEvents from './src/components/CalendarEvents';
+import WorldNews from './src/components/WorldNews';
 
 class SmartMirror extends Component {
   render() {
@@ -24,6 +25,7 @@ class SmartMirror extends Component {
 					<Clock />
 				</View>
 				<CalendarEvents />
+				<WorldNews />
       </View>
     );
   }

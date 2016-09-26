@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, ListView, Text, NativeModules } from 'react-native';
 import RNCalendarEvents from 'react-native-calendar-events';
 import moment from 'moment';
+import Icon from 'react-native-vector-icons/Ionicons';
 import styles from '../styles';
 
 // const google = require('googleapis');
@@ -45,7 +46,7 @@ class CalendarEvents extends Component {
 				<ListView
 					style={styles.calendarEventsList}
 					dataSource={this.state.events}
-					renderRow={(rowData) => <Text style={styles.calendarEventListItem}>{rowData.title} at {moment(rowData.occurrenceDate).utcOffset(-420).format('HH:mm dddd')}</Text>}
+					renderRow={(rowData) => <Text style={styles.calendarEventListItem}><Icon name={'ios-calendar-outline'} size={18} color="#fff"/>{'   '}{rowData.title} at {moment(rowData.occurrenceDate).utcOffset(-420).format('HH:mm dddd')}</Text>}
 				/>
 			</View>
 		);

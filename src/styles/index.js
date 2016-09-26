@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
 		color: '#fff'
 	},
 	calendarEvents: {
-		flex: 1,
+		flex: 0.5,
 		padding: 20
 	},
 	calendarEventsList: {
@@ -64,8 +64,21 @@ const styles = StyleSheet.create({
 	calendarEventListItem: {
 		padding: 6,
 		color: '#fff',
-		fontSize: 20,
+		fontSize: 18,
 		fontWeight: "200"
+	},
+	worldNews: {
+		flex: 1.5,
+		padding: 20
+	},
+	worldNewsList: {
+
+	},
+	worldNewsListItem: {
+		padding: 8,
+		color: '#fff',
+		fontSize: 14,
+		fontWeight: '200'
 	}
 });
 

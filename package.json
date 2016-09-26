@@ -8,8 +8,8 @@
   "dependencies": {
     "googleapis": "^13.0.0",
     "moment": "^2.15.1",
-    "react": "15.3.1",
-    "react-native": "0.33.0",
+    "react": "^15.3.1",
+    "react-native": "^0.34.0",
     "react-native-calendar-events": "^1.0.0",
     "react-native-config": "^0.1.0",
     "react-native-vector-icons": "^2.1.0"
