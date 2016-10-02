@@ -9,13 +9,13 @@ class Weather extends Component {
 		super();
 
 		this.forecastApiKey = Config.FORECAST_API_KEY;
-		this.latitude = '33.9996905';
-		this.longitude = '-118.4704324';
 		this.state = {
 			temp: '',
 			currIcon: 'ios-sunny',
 			forecast: '',
-			moonPhase: ''
+			moonPhase: '',
+			latitude: '',
+			longitude: ''
 		};
 
 		this.getMoonPhaseStr = this.getMoonPhaseStr.bind(this);
@@ -77,19 +77,30 @@ class Weather extends Component {
 	}
 
 	componentDidMount() {
-		fetch(`https://api.forecast.io/forecast/${this.forecastApiKey}/${this.latitude},${this.longitude}`)
-			.then((response) => response.json())
-			.then((json) => {
+		navigator.geolocation.getCurrentPosition(
+			(position) => {
+				console.log(position);
 				this.setState({
-					temp: Math.round(json.currently.temperature),
-					currIcon: this.getWeatherIcon(json.minutely.icon),
-					forecast: json.hourly.summary,
-					moonPhase: this.getMoonPhaseStr(json.daily.data[0].moonPhase)
+					latitude: position.coords.latitude,
+					longitude: position.coords.longitude,
 				});
-			})
-			.catch((error) => {
-				console.error(error);
-			});
+
+				fetch(`https://api.forecast.io/forecast/${this.forecastApiKey}/${this.state.latitude},${this.state.longitude}`)
+					.then((response) => response.json())
+					.then((json) => {
+						this.setState({
+							temp: Math.round(json.currently.temperature),
+							currIcon: this.getWeatherIcon(json.minutely.icon),
+							forecast: json.hourly.summary,
+							moonPhase: this.getMoonPhaseStr(json.daily.data[0].moonPhase)
+						});
+					})
+					.catch((error) => {
+						console.error(error);
+					});
+			},
+			(error) => { alert(JSON.stringify(error)); }
+		);
 	}
 
 	render() {

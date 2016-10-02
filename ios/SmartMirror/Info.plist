@@ -53,7 +53,7 @@
 	<key>NSCalendarsUsageDescription</key>
 	<string>SmartMirror uses your calendar to show your upcoming events for the day.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>SmartMirror uses your location to get weather forecasts</string>
 	<key>NSMainNibFile</key>
 	<string>LaunchScreen</string>
 	<key>UIAppFonts</key>

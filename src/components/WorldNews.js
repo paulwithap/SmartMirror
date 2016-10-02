@@ -6,8 +6,8 @@ import styles from '../styles';
 // const google = require('googleapis');
 
 class WorldNews extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 
 		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
@@ -25,7 +25,7 @@ class WorldNews extends Component {
 					subreddit = 'news+worldnews+politics';
 				}
 
-				fetch('https://www.reddit.com/r/news+worldnews+politics.json')
+				fetch(`https://www.reddit.com/r/${subreddit}.json`)
 					.then((response) => response.json())
 					.then((json) => {
 						console.log('reddit json');

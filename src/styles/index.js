@@ -94,16 +94,25 @@ const styles = StyleSheet.create({
 	},
 	settingsContainer: {
 		flex: 1,
-		height: 200,
-		paddingTop: 80
+		paddingTop: 80,
+		backgroundColor: '#000'
 	},
 	settingsInputContainer: {
 		borderBottomWidth: 1,
 		borderBottomColor: '#999',
-		margin: 10
+		margin: 10,
+		marginBottom: 40
 	},
 	settingsInput: {
-		height: 40
+		height: 50,
+		color: '#fff',
+		fontSize: 24
+	},
+	settingsInputLabel: {
+		fontSize: 32,
+		fontWeight: '400',
+		color: '#fff',
+		paddingBottom: 12
 	},
 	settingsSubmitBtn: {
 		backgroundColor: '#00c27e',

@@ -59,13 +59,17 @@ class Settings extends Component {
 	}
 
 	backToDashboard() {
-		this.props.navigator.pop();
+		this.props.navigator.push({
+			component: Dashboard,
+			title: 'Dashboard',
+			passProps: { subreddit: this.state.settings.subreddit }
+		});
 	}
 
 	render() {
 		return (
 			<ScrollView style={styles.settingsContainer}>
-				<View style={styles.settingsInputContainer}>
+				{/* <View style={styles.settingsInputContainer}>
 					<Text>Zipcode for Weather Forecast</Text>
 					<TextInput
 						style={styles.settingsInput}
@@ -74,11 +78,12 @@ class Settings extends Component {
 						}}
 						value={this.state.settings.zipcode}
 					/>
-				</View>
+				</View> */}
 				<View style={styles.settingsInputContainer}>
-					<Text>Subreddit for News Headlines</Text>
+					<Text style={styles.settingsInputLabel}>Subreddit for News Headlines</Text>
 					<TextInput
 						style={styles.settingsInput}
+						autoCapitalize="none"
 						onChangeText={(text) => {
 							console.log('text');
 							console.log(text);
