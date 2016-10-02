@@ -31,6 +31,7 @@
 		7F2DB38BC3C04ED9BB650DF8 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 598D37F6A9334D87828816CB /* Entypo.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8B9EEBD28E5442B8853E8754 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 633C604339DB42DA99077FF2 /* Octicons.ttf */; };
+		C0D86E151DA1B56B00D55F9A /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D86E141DA1B56B00D55F9A /* Images-2.xcassets */; };
 		E45D1EA3377C403A8B1C5E1E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EFFD7AB9ED84F60B73875DB /* Ionicons.ttf */; };
 		EE09F31ECE4546B2B3D4EB68 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15FBA5AD09E4C1AA81D223F /* libRNVectorIcons.a */; };
 		F3CD8FD2291447A49BDB5965 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA080FB382B543F8A3A8C402 /* FontAwesome.ttf */; };
@@ -172,6 +173,7 @@
 		AFD581F61533461FBE670810 /* libReactNativeConfig.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeConfig.a; sourceTree = "<group>"; };
 		B5BF4570B70349DDA36BF75D /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		BA080FB382B543F8A3A8C402 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		C0D86E141DA1B56B00D55F9A /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "SmartMirror/Images-2.xcassets"; sourceTree = "<group>"; };
 		C15FBA5AD09E4C1AA81D223F /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +292,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				C0D86E141DA1B56B00D55F9A /* Images-2.xcassets */,
 			);
 			name = SmartMirror;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				025A6728EBF640CFA9B71FC5 /* EvilIcons.ttf in Resources */,
 				F3CD8FD2291447A49BDB5965 /* FontAwesome.ttf in Resources */,
 				30306B6A8211496EB813D7F5 /* Foundation.ttf in Resources */,
+				C0D86E151DA1B56B00D55F9A /* Images-2.xcassets in Resources */,
 				E45D1EA3377C403A8B1C5E1E /* Ionicons.ttf in Resources */,
 				3445F211AC9645369CD8C38D /* MaterialIcons.ttf in Resources */,
 				8B9EEBD28E5442B8853E8754 /* Octicons.ttf in Resources */,
@@ -767,7 +771,7 @@
 					"$(SRCROOT)/../node_modules/react-native-calendar-events",
 				);
 				INFOPLIST_FILE = SmartMirror/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -794,7 +798,7 @@
 					"$(SRCROOT)/../node_modules/react-native-calendar-events",
 				);
 				INFOPLIST_FILE = SmartMirror/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
