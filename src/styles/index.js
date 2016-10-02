@@ -1,6 +1,17 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+	container: {
+    flex: 1,
+		flexDirection: 'column',
+    justifyContent: 'center',
+    backgroundColor: '#000000'
+  },
+	weatherClock: {
+		flex: 1,
+		flexDirection: 'row',
+		justifyContent: 'center',
+	},
 	weatherContainer: {
 		flex: 1,
 		padding: 20,
@@ -80,6 +91,43 @@ const styles = StyleSheet.create({
 		color: '#fff',
 		fontSize: 28,
 		fontWeight: '200'
+	},
+	settingsContainer: {
+		flex: 1,
+		height: 200,
+		paddingTop: 80
+	},
+	settingsInputContainer: {
+		borderBottomWidth: 1,
+		borderBottomColor: '#999',
+		margin: 10
+	},
+	settingsInput: {
+		height: 40
+	},
+	settingsSubmitBtn: {
+		backgroundColor: '#00c27e',
+		flexDirection: 'row',
+		alignSelf: 'stretch',
+		justifyContent: 'center',
+		height: 80
+	},
+	settingsSubmitText: {
+		fontSize: 32,
+		color: 'white',
+		alignSelf: 'center'
+	},
+	settingsBackBtn: {
+		backgroundColor: '#333',
+		flexDirection: 'row',
+		alignSelf: 'stretch',
+		justifyContent: 'center',
+		height: 80
+	},
+	settingsBackText: {
+		fontSize: 32,
+		color: 'white',
+		alignSelf: 'center'
 	}
 });
 

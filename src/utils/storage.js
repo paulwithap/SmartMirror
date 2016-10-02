@@ -1,18 +1,18 @@
-/* @flow */
-import { AsyncStorage } from 'react-native';
+const ReactNative = require('react-native');
+const { AsyncStorage } = ReactNative;
 
-export function* set(key: string, data: Object): Object {
+export const setItem = async (key, data) => {
 	try {
 		await AsyncStorage.setItem(`@SmartMirrorStore:${key}`, JSON.stringify(data));
-		return true;
-	} catch (error: Object) {
+		return result;
+	} catch (error) {
 		return error;
 	}
 }
 
-export function* get(key: string): Object {
+export const getItem = async (key) => {
 	try {
-		const data: Object = await AsyncStorage.getItem(`@SmartMirrorStore:${key}`);
+		const data = await AsyncStorage.getItem(`@SmartMirrorStore:${key}`);
 		return JSON.parse(data);
 	} catch (error) {
 		return error;
