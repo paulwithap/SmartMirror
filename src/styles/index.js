@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	weatherTemp: {
-		fontSize: 40,
+		fontSize: 80,
 		fontWeight: "200",
 		color: '#fff',
 	},
@@ -18,12 +18,13 @@ const styles = StyleSheet.create({
 	},
 	weatherForecast: {
 		paddingBottom: 10,
-		fontSize: 20,
+		fontSize: 40,
 		fontWeight: "200",
 		color: '#fff',
 	},
 	weatherMoonPhase: {
 		color: '#fff',
+		fontSize: 24,
 		fontWeight: "200"
 	},
 	clockContainer: {
@@ -31,25 +32,25 @@ const styles = StyleSheet.create({
 		padding: 20,
 	},
 	time: {
-		fontSize: 40,
+		fontSize: 80,
 		fontWeight: "200",
 		textAlign: 'right',
 		color: '#fff'
 	},
 	pm: {
-		fontSize: 12,
+		fontSize: 24,
 		textAlign: 'right',
 		color: '#fff'
 	},
 	day: {
 		paddingBottom: 2,
-		fontSize: 20,
+		fontSize: 40,
 		fontWeight: "200",
 		textAlign: 'right',
 		color: '#fff'
 	},
 	date: {
-		fontSize: 20,
+		fontSize: 40,
 		fontWeight: "200",
 		textAlign: 'right',
 		color: '#fff'
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
 	calendarEventListItem: {
 		padding: 6,
 		color: '#fff',
-		fontSize: 18,
+		fontSize: 36,
 		fontWeight: "200"
 	},
 	worldNews: {
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
 	worldNewsListItem: {
 		padding: 8,
 		color: '#fff',
-		fontSize: 14,
+		fontSize: 28,
 		fontWeight: '200'
 	}
 });

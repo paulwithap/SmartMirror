@@ -97,7 +97,7 @@ class Weather extends Component {
 			<View style={styles.weatherContainer}>
 				<View style={styles.weatherTopRow}>
 					<Text style={styles.weatherTemp}>{this.state.temp}°{' '}</Text>
-					<Text style={styles.weatherIcon}><Icon name={this.state.currIcon} size={38} color="#fff"/></Text>
+					<Text style={styles.weatherIcon}><Icon name={this.state.currIcon} size={80} color="#fff"/></Text>
 				</View>
 				<Text style={styles.weatherForecast}>{this.state.forecast}</Text>
 				<Text style={styles.weatherMoonPhase}>{this.state.moonPhase}</Text>

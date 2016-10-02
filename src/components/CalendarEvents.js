@@ -46,7 +46,7 @@ class CalendarEvents extends Component {
 				<ListView
 					style={styles.calendarEventsList}
 					dataSource={this.state.events}
-					renderRow={(rowData) => <Text style={styles.calendarEventListItem}><Icon name={'ios-calendar-outline'} size={18} color="#fff"/>{'   '}{rowData.title} at {moment(rowData.occurrenceDate).utcOffset(-420).format('HH:mm dddd')}</Text>}
+					renderRow={(rowData) => <Text style={styles.calendarEventListItem}><Icon name={'ios-calendar-outline'} size={32} color="#fff"/>{'   '}{rowData.title} at {moment(rowData.occurrenceDate).utcOffset(-420).format('HH:mm dddd')}</Text>}
 				/>
 			</View>
 		);
