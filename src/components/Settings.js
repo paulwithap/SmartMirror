@@ -59,10 +59,12 @@ class Settings extends Component {
 	}
 
 	backToDashboard() {
+		console.log('Dashboard');
+		console.log(Dashboard);
 		this.props.navigator.push({
 			component: Dashboard,
 			title: 'Dashboard',
-			passProps: { subreddit: this.state.settings.subreddit }
+			passProps: { refresh: true }
 		});
 	}
 
@@ -111,4 +113,4 @@ class Settings extends Component {
 	}
 }
 
-module.exports = Settings;
+export default Settings;

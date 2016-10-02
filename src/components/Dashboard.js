@@ -41,4 +41,4 @@ class Dashboard extends Component {
   }
 }
 
-module.exports = Dashboard;
+export default Dashboard;
