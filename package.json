@@ -13,5 +13,8 @@
     "react-native-calendar-events": "^1.0.0",
     "react-native-config": "^0.1.0",
     "react-native-vector-icons": "^2.1.0"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.30.0"
   }
 }
