@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, ListView, Text, NativeModules } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import { getItem } from '../utils/storage';
 import styles from '../styles';
 
@@ -45,7 +46,7 @@ class WorldNews extends Component {
 					enableEmptySections
 					style={styles.worldNewsList}
 					dataSource={this.state.posts}
-					renderRow={(rowData) => <Text style={styles.worldNewsListItem}>{rowData.data.title}</Text>}
+					renderRow={(rowData) => <Text style={styles.worldNewsListItem}><Icon name={'ios-paper-outline'} size={24} color="#fff"/>{'   '}{rowData.data.title}</Text>}
 				/>
 			</View>
 		);
