@@ -7,41 +7,24 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
-  View
+  NavigatorIOS
 } from 'react-native';
-import Weather from './src/components/Weather';
-import Clock from './src/components/Clock';
+import Dashboard from './src/components/Dashboard';
+import styles from './src/styles'
 
 class SmartMirror extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Weather />
-				<Clock />
-      </View>
+      <NavigatorIOS
+        style={styles.container}
+				initialRoute={{
+					component: Dashboard,
+					title: 'Dashboard'
+				}}
+				navigationBarHidden={true}
+			/>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-		flexDirection: 'row',
-    justifyContent: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('SmartMirror', () => SmartMirror);
